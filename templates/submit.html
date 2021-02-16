@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit</title>
+</head>
+<body>
+<a href="/user/logout">Logout</a>
+<h2>Hello, {{ account['username'] }}</h2>
+<h2>Type in an url to handwritten digit 28x28 picture</h2>
+
+<form name="imageForm" action="/user/submit" method="post">
+    <input style="width: 50%" name="imageUrl" id="url" type="url" placeholder="https://example.com"
+           required>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
